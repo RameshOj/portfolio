@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Expertise from "./components/Expertise";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import LatestProjects from "./components/LatestProjects";
+import Qualification from "./components/Qualification";
+import Specializing from "./components/Specializing";
+import Testimonials from "./components/Testimonials";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Hero />
+      <Specializing />
+      <Expertise />
+      <LatestProjects />
+      <Qualification />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

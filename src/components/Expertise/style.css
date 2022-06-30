@@ -1,0 +1,19 @@
+.rightImgMeContainer {
+  width: 276px;
+  height: 445px;
+  position: relative;
+  top: 30px;
+}
+
+.rightImgMeContainer > img {
+  max-width: 276px;
+  max-height: 445px;
+  margin: auto;
+}
+
+.headingContainer {
+  width: auto;
+}
+
+@media screen and (max-width: 768px) {
+}
