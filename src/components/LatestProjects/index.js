@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../UI/Card";
 import MediumHeading from "../UI/MediumHeading";
 import SmallHeading from "../UI/SmallHeading";
-import latestProject from "../../assets/projects/WWW.png";
+import latestProject from "../../assets/projects/portfolio.png";
 import Button from "../UI/Button";
 import "./style.css";
 
@@ -28,7 +28,7 @@ export default function LatestProjects() {
             </div>
           </div>
           <div className="projectImgContainer">
-            <a href="https://wwwlaundry.netlify.app/" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
               <img src={latestProject} alt="" />
             </a>
           </div>
