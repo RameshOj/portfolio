@@ -28,7 +28,11 @@ export default function LatestProjects() {
             </div>
           </div>
           <div className="projectImgContainer">
-            <a href="westernworkingworld.in" target="_blank" rel="noreferrer">
+            <a
+              href="http://westernworkingworld.in"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={latestProject} alt="" />
             </a>
           </div>
