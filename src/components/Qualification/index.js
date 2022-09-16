@@ -5,7 +5,7 @@ import Rammy3 from "../../assets/images/Rammy3.jpg";
 import Button from "../UI/Button";
 import Tile from "../UI/Tile";
 import "./style.css";
-import Resume from "../../assets/RameshOj.docx";
+import Resume from "../../assets/RameshOj.pdf";
 
 export default function Qualification() {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import me from "../../assets/images/Rammy.jpg";
 import Button from "../UI/Button";
 import "./style.css";
-import Resume from "../../assets/RameshOj.docx"
+import Resume from "../../assets/RameshOj.pdf"
 
 export default function Hero() {
   return (
