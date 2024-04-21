@@ -2,7 +2,7 @@ import React from "react";
 import me from "../../assets/images/Rammy.jpg";
 import Button from "../UI/Button";
 import "./style.css";
-import Resume from "../../assets/RameshOj.pdf"
+import Resume from "../../assets/RameshOj.pdf";
 
 export default function Hero() {
   return (
@@ -18,7 +18,7 @@ export default function Hero() {
           </p>
           <div className="flexRow" style={{ margin: "30px 0" }}>
             <div>
-              <Button href="tel:+919569389778" label="Hire Me" />
+              <Button href="tel:+919205018942" label="Hire Me" />
             </div>
             <div className="mlr-10">
               <Button href={Resume} label="Download CV" inverse={true} />

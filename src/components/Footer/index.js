@@ -1,6 +1,6 @@
 import React from "react";
 import SocialConnect from "../UI/SocialConnect";
-import conversation from "../../assets/images/conversation.png";
+import conversation from "../../assets/images/phone.png";
 import "./style.css";
 
 export default function Footer() {
@@ -23,7 +23,9 @@ export default function Footer() {
           </nav>
         </div>
         <div className="conversationContainer primaryBgColor mtb-10">
-          <img alt="" src={conversation} />
+          <a href="tel:+919205018942">
+            <img alt="phone" src={conversation} />
+          </a>
         </div>
       </div>
     </div>

@@ -40,7 +40,7 @@ export default function Qualification() {
           />
           <div className="flexRow">
             <div className="mlr-10">
-              <Button href="tel:+919569389778" label="Hire Me" />
+              <Button href="tel:+919205018942" label="Hire Me" />
             </div>
             <div className="mlr-10">
               <Button href={Resume} label="Download CV " inverse="true" />
