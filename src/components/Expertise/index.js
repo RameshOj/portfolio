@@ -13,6 +13,7 @@ const percentage = 70;
 export default function Expertise() {
   return (
     <div
+      id="expertise"
       className="container"
       style={{ margin: "50px auto", padding: "50px 0" }}
     >

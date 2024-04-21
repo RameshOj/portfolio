@@ -9,7 +9,7 @@ import "./style.css";
 
 export default function Testimonials() {
   return (
-    <div className="container">
+    <div id="testimonials" className="container">
       <div data-aos="fade-down">
         <SmallHeading text="Testimonials" />
         <MediumHeading text="What People Say" />

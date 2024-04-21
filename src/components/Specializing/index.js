@@ -66,7 +66,7 @@ export default function Specializing(props) {
   ];
 
   return (
-    <div className="container">
+    <div id="about" className="container">
       <Card style={{ padding: "50px" }}>
         <SmallHeading text="What I do" />
         <MediumHeading text="Specializing in" />

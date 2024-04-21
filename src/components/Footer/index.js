@@ -15,11 +15,12 @@ export default function Footer() {
         </div>
         <div className="footerMenus mtb-10">
           <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#qualification">Qualification</a>
+            <a href="#testimonials">Testimonials</a>
           </nav>
         </div>
         <div className="conversationContainer primaryBgColor mtb-10">

@@ -9,13 +9,14 @@ import "./style.css";
 export default function LatestProjects() {
   return (
     <div
+      id="portfolio"
       className="container"
       style={{ marginTop: "50px", marginBottom: "50px" }}
     >
       <div data-aos="zoom-in-up">
         <Card className="flexRow flexCol align-center justify-sb">
           <div className="projectPortfolioContainer">
-            <SmallHeading text="Portfolis" />
+            <SmallHeading text="Portfolio" />
             <MediumHeading
               style={{ textTransform: "uppercase" }}
               text="Latest Projects"

@@ -9,7 +9,7 @@ import Resume from "../../assets/RameshOj.pdf";
 
 export default function Qualification() {
   return (
-    <div className="container" style={{ padding: "50px 0" }}>
+    <div id="qualification" className="container" style={{ padding: "50px 0" }}>
       <SmallHeading text="Qualification" />
       <MediumHeading text="Education" />
       <div
