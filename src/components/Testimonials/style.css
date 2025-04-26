@@ -1,0 +1,43 @@
+.testimonialImgContainer {
+  width: 160px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.testimonialImgContainer img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.profileImgContainer {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.profileImgContainer img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.myCard {
+  width: 500px;
+  height: auto;
+  padding: 30px;
+  margin: 15px 0;
+}
+
+.contactCard {
+  width: 500px;
+  padding: 30px;
+}
+
+@media screen and (max-width: 786px) {
+  .testimonialImgContainer {
+    display: none;
+  }
+  .myCard {
+    width: 100%;
+  }
+  .contactCard {
+    width: 100%;
+  }
+}
