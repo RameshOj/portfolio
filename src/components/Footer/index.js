@@ -5,7 +5,7 @@ import "./style.css";
 
 export default function Footer() {
   return (
-    <div className="container">
+    <div id="contact" className="container">
       <div
         className="flexRow flexCol justify-sb align-center"
         style={{ margin: "50px 0" }}
@@ -15,15 +15,12 @@ export default function Footer() {
         </div>
         <div className="footerMenus mtb-10">
           <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#qual">Qualification</a>
+            <a href="#contact">Contact</a>
           </nav>
-        </div>
-        <div className="conversationContainer primaryBgColor mtb-10">
-          <img alt="" src={conversation} />
         </div>
       </div>
     </div>

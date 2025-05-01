@@ -9,6 +9,7 @@ import "./style.css";
 export default function LatestProjects() {
   return (
     <div
+      id="portfolio"
       className="container"
       style={{ marginTop: "50px", marginBottom: "50px" }}
     >

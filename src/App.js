@@ -1,4 +1,5 @@
 import "./App.css";
+import ChatBot from "./components/ChatBot/ChatBot";
 import Expertise from "./components/Expertise";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -26,6 +27,7 @@ function App() {
       <Qualification />
       <Testimonials />
       <Footer />
+      <ChatBot />
     </div>
   );
 }

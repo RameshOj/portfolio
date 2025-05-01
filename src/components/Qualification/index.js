@@ -9,7 +9,7 @@ import Resume from "../../assets/RameshOj.pdf";
 
 export default function Qualification() {
   return (
-    <div className="container" style={{ padding: "50px 0" }}>
+    <div id="qual" className="container" style={{ padding: "50px 0" }}>
       <SmallHeading text="Qualification" />
       <MediumHeading text="Education" />
       <div
@@ -40,7 +40,7 @@ export default function Qualification() {
           />
           <div className="flexRow">
             <div className="mlr-10">
-              <Button href="tel:+919569389778" label="Hire Me" />
+              <Button href="tel:+919540205885" label="Hire Me" />
             </div>
             <div className="mlr-10">
               <Button href={Resume} label="Download CV " inverse="true" />

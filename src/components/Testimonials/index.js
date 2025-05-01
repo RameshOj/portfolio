@@ -56,7 +56,7 @@ export default function Testimonials() {
           Have any Project in Mind?
           <span className="primaryColor"> Say Hello at</span>
         </p>
-        <p className="text-center font-20">rameshojha3131@gmail.com</p>
+        <p className="text-center font-20">ramstartwork@gmail.com</p>
       </Card>
     </div>
   );

@@ -19,3 +19,11 @@
   font-size: 14px;
   font-weight: 500;
 }
+
+@media screen and (max-width: 786px) {
+  .footerMenus a {
+    margin: 0 4px;
+    font-size: 10px;
+  }
+  
+}
