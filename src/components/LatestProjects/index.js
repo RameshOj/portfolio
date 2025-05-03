@@ -30,7 +30,7 @@ export default function LatestProjects() {
           </div>
           <div className="projectImgContainer">
             <a
-              href="http://westernworkingworld.in"
+              href="https://78fafdbb-23ad-4f9e-8180-6b39a306ce75.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
