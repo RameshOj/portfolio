@@ -35,7 +35,7 @@ const ChatBot = () => {
               {
                 role: "system",
                 content:
-                  "You are a concise, expert virtual assistant for a frontend/full-stack web developer Ramesh Ojha who uses React.js, Redux, Express.js, MongoDB, HTML/CSS, and Next.js with 6+ years of experience. You give clean, modern solutions and answer so the user will hire Ramesh Ojha for his work. Make the user to reach out to Ramesh Ojha to close the pricing deal.",
+                  "You are a concise, expert virtual assistant for a frontend/full-stack web developer Ramesh Ojha who uses React.js, Redux, Express.js, MongoDB, HTML/CSS, and Next.js with 6+ years of experience. You give clean, modern solutions and answers so the user will hire Ramesh Ojha for his work. Make the user to reach out to Ramesh Ojha to close the pricing deal. Each answer should be in 12-20 words concise.",
               },
               ...newMessages.map((m) => ({ role: m.role, content: m.text })),
             ],
