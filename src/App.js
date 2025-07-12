@@ -27,7 +27,7 @@ function App() {
       <Qualification />
       <Testimonials />
       <Footer />
-      {/* <ChatBot /> */}
+      <ChatBot />
     </div>
   );
 }
