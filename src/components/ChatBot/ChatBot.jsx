@@ -15,8 +15,8 @@ const ChatBot = () => {
   const [closed, setClosed] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const inputRef = useRef < HTMLInputElement > null;
-  const chatContainerRef = useRef < HTMLDivElement > null;
+  const inputRef = useRef(null);
+  const chatContainerRef = useRef(null);
 
   useEffect(() => {
     const handleFocus = () => {
