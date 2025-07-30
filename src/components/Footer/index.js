@@ -1,8 +1,8 @@
-import React from "react";
 import SocialConnect from "../UI/SocialConnect";
-import conversation from "../../assets/images/conversation.png";
 import "./style.css";
 
+// Footer Component
+// This component displays the footer with social links and navigation menus
 export default function Footer() {
   return (
     <div id="contact" className="container">

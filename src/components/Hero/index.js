@@ -1,9 +1,9 @@
-import React from "react";
-import me from "../../assets/images/Rammy.jpg";
 import Button from "../UI/Button";
-import "./style.css";
+import me from "../../assets/images/Rammy.jpg";
 import Resume from "../../assets/RameshOj.pdf";
+import "./style.css";
 
+// Hero Component
 export default function Hero() {
   return (
     <div id="home" className="container" style={{ marginTop: "70px" }}>

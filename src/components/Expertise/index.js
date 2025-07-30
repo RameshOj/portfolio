@@ -10,6 +10,8 @@ import SocialConnect from "../UI/SocialConnect";
 
 const percentage = 70;
 
+// Expertise Component
+// This component displays the expertise section with a circular progress bar and social links
 export default function Expertise() {
   return (
     <div

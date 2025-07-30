@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./ChatBot.css";
 
+// ChatBot Component
+// This component implements a chat interface that allows users to interact with an AI assistant {WIP}
 const ChatBot = () => {
   const [messages, setMessages] = useState([
     {

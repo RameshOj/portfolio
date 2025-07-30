@@ -3,6 +3,8 @@ import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./style.css";
 
+// Skill Component
+// This component displays a skill with a circular progress bar indicating the skill level
 export default function Skill(props) {
   return (
     <div className="flexRow align-center mtb-10 plr-10">

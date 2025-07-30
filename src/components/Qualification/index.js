@@ -1,12 +1,13 @@
-import React from "react";
 import MediumHeading from "../UI/MediumHeading";
 import SmallHeading from "../UI/SmallHeading";
 import Rammy3 from "../../assets/images/Rammy3.jpg";
 import Button from "../UI/Button";
 import Tile from "../UI/Tile";
-import "./style.css";
 import Resume from "../../assets/RameshOj.pdf";
+import "./style.css";
 
+// Qualification Component
+// This component displays educational qualifications with images and descriptions
 export default function Qualification() {
   return (
     <div id="qual" className="container" style={{ padding: "50px 0" }}>

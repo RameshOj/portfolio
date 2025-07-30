@@ -11,13 +11,16 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+// Main App Component
 function App() {
+  // Initialize AOS (Animate On Scroll) library
   useEffect(() => {
     Aos.init({
       duration: 1000,
     });
   });
 
+  // Render the main components of the application
   return (
     <div>
       <Hero />
@@ -27,7 +30,7 @@ function App() {
       <Qualification />
       <Testimonials />
       <Footer />
-    {/* <ChatBot /> */}
+      {/* <ChatBot /> */} {/* ChatBot component WIP */}
     </div>
   );
 }

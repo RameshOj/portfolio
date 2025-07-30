@@ -6,6 +6,8 @@ import latestProject from "../../assets/projects/Western.png";
 import Button from "../UI/Button";
 import "./style.css";
 
+// LatestProjects Component
+// This component displays the latest projects with a heading and an image link to the project
 export default function LatestProjects() {
   return (
     <div

@@ -1,6 +1,8 @@
 import React from "react";
 import { colors } from "../../style";
 
+// Button Component
+// This component renders a button that can be styled as primary or inverse
 export default function Button(props) {
   return (
     <a

@@ -1,11 +1,15 @@
-import React from "react";
 import Card from "../UI/Card";
 import MediumHeading from "../UI/MediumHeading";
 import Skill from "../UI/Skill";
 import SmallHeading from "../UI/SmallHeading";
 import { colors } from "../../style";
 
-export default function Specializing(props) {
+// Specializing Component
+// This component displays a list of skills with their descriptions and progress values
+export default function Specializing() {
+  // Skills data
+  // Each skill has a name, description, value (percentage), text color, and path color for the progress bar
+  // The colors are defined in the imported colors object
   const skills = [
     {
       skillName: "HTML",
@@ -65,6 +69,8 @@ export default function Specializing(props) {
     },
   ];
 
+  // Render the Specializing component
+  // It includes a heading and a list of skills displayed in a responsive grid layout
   return (
     <div id="about" className="container">
       <Card style={{ padding: "50px" }}>

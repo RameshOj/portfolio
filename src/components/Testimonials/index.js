@@ -7,6 +7,9 @@ import testimonialsRight from "../../assets/images/testimonials-02.jpg";
 import profilePicture from "../../assets/images/testimonial-pic.jpg";
 import "./style.css";
 
+// Testimonials Component
+// This component displays testimonials from people about the work done by Ramesh
+// It includes a heading, a testimonial card, and a contact card for inquiries
 export default function Testimonials() {
   return (
     <div className="container">

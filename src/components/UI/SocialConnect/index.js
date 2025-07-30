@@ -1,7 +1,8 @@
-import React from "react";
 import socialIcons from "../../../assets/social-icons";
 import "./style.css";
 
+// SocialConnect Component
+// This component displays social media links for connecting with the user
 export default function SocialConnect(props) {
   return (
     <div className="socialConnect" style={props.style}>

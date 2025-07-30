@@ -1,5 +1,7 @@
 import React from "react";
 
+// Tile Component
+// This component displays a tile with a title, medium title, and description
 export default function Tile({ title, mediumTitle, desc }) {
   return (
     <div

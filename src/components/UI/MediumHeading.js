@@ -1,5 +1,7 @@
 import React from "react";
 
+// MediumHeading Component
+// This component renders a medium-sized heading with customizable text and style
 export default function MediumHeading({ text, style }) {
   return (
     <p
