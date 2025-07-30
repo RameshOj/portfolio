@@ -41,29 +41,20 @@ const ChatBot = () => {
     setLoading(true);
 
     try {
-      // Call the Netlify function to get the AI response
+      const apiMessages = newMessages.map((msg) => ({
+        role: msg.role,
+        content: msg.text,
+      }));
+
       const res = await fetch("/.netlify/functions/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          prompt: `You are a concise, expert virtual assistant for a developer named Ramesh Ojha who uses React.js, Redux, Express.js, MongoDB, HTML/CSS, and Next.js with 4+ years of experience. He is also in AI, Python, Go and trending tech stack.
-          You need to give clean, modern solutions and answers so the user or recruiter will hire Ramesh Ojha for his/her work. When user want to proceed with his/her idea then suggest the user to reach out to Ramesh Ojha to close the pricing deal. 
-          
-          If someone ask contact details of Ramesh then provide phone number and email address in readable format, below is the contact details:
-          <phone>+91-9540205885</phone>
-          <email>ramstartwork@gmail.com</email>
-
-          Else ask user whether they want contact details of Ramesh Ojha or not and if yes then provide the contact details else talk about technology.
-
-          Greet first and each answer should be in 12-20 words concise. Be polite. Use emoji. 
-
-          Here is the user prompt: <prompt-input> ${input} <prompt-input/>`,
+          messages: apiMessages,
         }),
       });
 
       const data = await res.json();
-      // return data.message;
-
       const botReply =
         data.choices?.[0]?.message?.content || "Sorry, no response.";
       setMessages([...newMessages, { role: "assistant", text: botReply }]);
