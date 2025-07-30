@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./ChatBot.css";
 
 // ChatBot Component
@@ -14,6 +14,24 @@ const ChatBot = () => {
   const [open, setOpen] = useState(false);
   const [closed, setClosed] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  const inputRef = useRef < HTMLInputElement > null;
+  const chatContainerRef = useRef < HTMLDivElement > null;
+
+  useEffect(() => {
+    const handleFocus = () => {
+      setTimeout(() => {
+        chatContainerRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    };
+
+    const input = inputRef.current;
+    input?.addEventListener("focus", handleFocus);
+
+    return () => {
+      input?.removeEventListener("focus", handleFocus);
+    };
+  }, []);
 
   const sendMessage = async () => {
     if (!input.trim()) return;
@@ -59,6 +77,7 @@ const ChatBot = () => {
       )}
       <div
         id="chat-container"
+        ref={chatContainerRef}
         className={`chat-container ${open ? "open" : "minimized"}`}
       >
         <div className="chat-header">
@@ -82,6 +101,7 @@ const ChatBot = () => {
         </div>
         <div className="chat-input">
           <input
+            ref={inputRef}
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && sendMessage()}
