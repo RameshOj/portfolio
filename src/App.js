@@ -13,6 +13,15 @@ import { useEffect } from "react";
 
 // Main App Component
 function App() {
+  // Listen to window resize event
+  window.addEventListener("resize", () => {
+    const chatContainer = document.querySelector("#chat-container"); // adjust ID/class accordingly
+    if (window.innerHeight < 500) {
+      // Keyboard likely opened
+      chatContainer.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+
   // Initialize AOS (Animate On Scroll) library
   useEffect(() => {
     Aos.init({
@@ -30,7 +39,7 @@ function App() {
       <Qualification />
       <Testimonials />
       <Footer />
-      {/* <ChatBot /> */} {/* ChatBot component WIP */}
+      <ChatBot />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 .chat-container {
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     right: 20px;
     width: 320px;
     font-family: sans-serif;
