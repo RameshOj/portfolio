@@ -16,7 +16,7 @@ function App() {
   // Listen to window resize event
   window.addEventListener("resize", () => {
     const chatContainer = document.querySelector("#chat-container"); // adjust ID/class accordingly
-    if (window.innerHeight < 500) {
+    if (window.innerHeight < 600) {
       // Keyboard likely opened
       chatContainer.scrollIntoView({ behavior: "smooth" });
     }
