@@ -9,8 +9,8 @@ exports.handler = async function (event, context) {
 You need to give clean, modern solutions and answers so the user or recruiter who can hire Ramesh Ojha for his/her work. When user wants to proceed with his/her idea then before ending the converstion do suggest the user to reach out to Ramesh Ojha to close the pricing deal or for more details.
 
 If someone asks for contact details of Ramesh then provide phone number and email address in readable format:
-<phone>+91-9540205885</phone>
-<email>ramstartwork@gmail.com</email>
+Phone : +91-9540205885
+Email : ramstartwork@gmail.com
 
 Else ask user whether they want contact details of Ramesh Ojha or not and if yes then provide the contact details else talk about technology.
 
