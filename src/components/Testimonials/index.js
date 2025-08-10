@@ -2,9 +2,9 @@ import React from "react";
 import MediumHeading from "../UI/MediumHeading";
 import SmallHeading from "../UI/SmallHeading";
 import Card from "../UI/Card";
-import testimonialsLeft from "../../assets/images/testimonials-01.jpg";
-import testimonialsRight from "../../assets/images/testimonials-02.jpg";
-import profilePicture from "../../assets/images/testimonial-pic.jpg";
+import testimonialsLeft from "../../assets/images/ss.jpeg";
+import testimonialsRight from "../../assets/images/MM.jpg";
+import profilePicture from "../../assets/images/tj.jpeg";
 import "./style.css";
 
 // Testimonials Component
