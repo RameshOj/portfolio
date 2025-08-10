@@ -12,7 +12,7 @@ export default function Hero() {
           <p className="uppercase bold-500 textColor ls-1 mtb-10">
             <span className="primaryColor">Hello,</span> I am Ramesh Ojha
           </p>
-          <h1 className="textColor ls-1 mtb-10">Solution Engineer</h1>
+          <h1 className="textColor ls-1 mtb-10">Software Engineer</h1>
           <p className="font-12 grey mtb-10">
             Front-End Engineer using ReactJS.
           </p>
