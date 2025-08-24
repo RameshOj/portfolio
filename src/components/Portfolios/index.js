@@ -1,6 +1,6 @@
 import "./styles.css";
 import latestProject from "../../assets/projects/Western.png";
-import secondProject from "../../assets/projects/Pooja.png";
+import secondProject from "../../assets/projects/Pooj.jpeg";
 
 export default function Portfolios() {
   return (

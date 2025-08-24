@@ -18,7 +18,7 @@
     width: calc(100% - 40px);
     padding: 20px 0;
     margin: 20px;
-    border: 1px solid #ddd;
+    border: 1px dashed #16c79a;
     display: flex;
     flex-direction: column;
     cursor: pointer;
