@@ -27,7 +27,7 @@ export default function LatestProjects() {
               className="mtb-10 flexRow"
               style={{ justifyContent: "center" }}
             >
-              <Button label="Portfolios" />
+              <Button href="/portfolio" label="Portfolios" />
             </div>
           </div>
           <div className="projectImgContainer">

@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import ChatBot from "./components/ChatBot/ChatBot";
 import Expertise from "./components/Expertise";
@@ -10,6 +11,8 @@ import Testimonials from "./components/Testimonials";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Portfolios from "./components/Portfolios";
+import Home from "./pages/Home";
 
 // Main App Component
 function App() {
@@ -31,16 +34,20 @@ function App() {
 
   // Render the main components of the application
   return (
-    <div>
-      <Hero />
-      <Specializing />
-      <Expertise />
-      <LatestProjects />
-      <Qualification />
-      <Testimonials />
-      <Footer />
-      <ChatBot />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/portfolio"
+          element={
+            <>
+              <Portfolios />
+              <Footer />
+            </>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

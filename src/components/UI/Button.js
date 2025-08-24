@@ -19,6 +19,7 @@ export default function Button(props) {
         borderColor: props.inverse ? colors.primaryColor : "transparent",
         fontSize: 12,
         letterSpacing: "1px",
+        cursor: "pointer",
       }}
     >
       {props.label}
