@@ -3,7 +3,7 @@ import "./style.css";
 
 // Footer Component
 // This component displays the footer with social links and navigation menus
-export default function Footer() {
+export default function Footer({ isOtherPage = false }) {
   return (
     <div id="contact" className="container">
       <div
@@ -15,11 +15,11 @@ export default function Footer() {
         </div>
         <div className="footerMenus mtb-10">
           <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#qual">Qualification</a>
-            <a href="#contact">Contact</a>
+            <a href={isOtherPage ? "/#home" : "#home"}>Home</a>
+            <a href={isOtherPage ? "/#about" : "#about"}>About</a>
+            <a href={isOtherPage ? "/#portfolio" : "#portfolio"}>Portfolio</a>
+            <a href={isOtherPage ? "/#qual" : "#qual"}>Qualification</a>
+            <a href={isOtherPage ? "/#contact" : "#contact"}>Contact</a>
           </nav>
         </div>
       </div>

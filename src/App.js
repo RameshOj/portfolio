@@ -42,7 +42,7 @@ function App() {
           element={
             <>
               <Portfolios />
-              <Footer />
+              <Footer isOtherPage={true} />
               <ChatBot />
             </>
           }
