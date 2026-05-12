@@ -1,0 +1,48 @@
+/* Image Container */
+.rightImgMeContainer {
+  width: 276px;
+  height: 445px;
+  position: relative;
+  top: 30px;
+  overflow: hidden;
+  border-radius: 12px; /* added for modern UI */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* subtle depth */
+}
+
+.rightImgMeContainer > img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* better than fixed size */
+  display: block;
+  margin: auto;
+}
+
+/* Heading */
+.headingContainer {
+  width: auto;
+  text-align: center; /* better for section feel */
+}
+
+/* Optional: Card spacing improvement */
+.cardSpacing {
+  margin-top: 20px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .rightImgMeContainer {
+    width: 220px;
+    height: 320px;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+  .rightImgMeContainer > img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .headingContainer {
+    text-align: center;
+  }
+}

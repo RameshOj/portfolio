@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Portfolios from "./components/Portfolios";
 import Home from "./pages/Home";
+import TeacherHero from "./components/Teacher";
 
 // Main App Component
 function App() {
@@ -44,6 +45,17 @@ function App() {
               <Portfolios />
               <Footer isOtherPage={true} />
               <ChatBot />
+            </>
+          }
+        />
+
+        <Route
+          path="/teacher"
+          element={
+            <>
+              <TeacherHero />
+              <Footer isOtherPage={true} />
+              <ChatBot teacher={true} />
             </>
           }
         />

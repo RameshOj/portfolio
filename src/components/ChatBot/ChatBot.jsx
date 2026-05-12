@@ -3,7 +3,7 @@ import "./ChatBot.css";
 
 // ChatBot Component
 // This component implements a chat interface that allows users to interact with an AI assistant {WIP}
-const ChatBot = () => {
+const ChatBot = ({ teacher = false }) => {
   const [messages, setMessages] = useState([
     {
       role: "assistant",
@@ -17,6 +17,8 @@ const ChatBot = () => {
 
   const inputRef = useRef(null);
   const chatContainerRef = useRef(null);
+
+  const messagesEndRef = useRef(null);
 
   useEffect(() => {
     const handleFocus = () => {
@@ -32,6 +34,12 @@ const ChatBot = () => {
       input?.removeEventListener("focus", handleFocus);
     };
   }, []);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, [messages, loading]);
 
   const sendMessage = async () => {
     if (!input.trim()) return;
@@ -51,6 +59,7 @@ const ChatBot = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           messages: apiMessages,
+          role: teacher ? "teacher" : "developer",
         }),
       });
 
@@ -100,6 +109,8 @@ const ChatBot = () => {
             </div>
           ))}
           {loading && <div className="chat-msg assistant">Typing...</div>}
+
+          <div ref={messagesEndRef} />
         </div>
         <div className="chat-input">
           <input
